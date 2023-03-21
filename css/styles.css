@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+    padding: 3vh 7vw;
+    display: flex;
+    background-color: black;
+    color:white;
+    align-items: center; /* Para alinear en el eje y usamos la propiedad align-items */
+    justify-content: space-between; /* Para alinear en el eje x usamos la propiedad justify-content */
+    
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn-menu{
+    background-color: transparent;
+    color:white;
+    font-size: 25px;
+    display:none;
+}
+
+/* Media query */
+@media screen and (max-width: 800px){
+    nav{
+        display:none;
+    }
+    .btn-menu{
+        display:block;
+    }
+}
+
+/* SASS sirve para darle lógica y orden al CSS, no se va a pedir como contenido pero lo podemos investigar por nuestra cuenta porque en las empresas se pide como un contenido deseable */
+/* Las media query siempre tienen que ir al final, y en el siguiente orden: la más alta en tamaño primero y la de más baja tamaño después */
