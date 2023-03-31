@@ -1,71 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 *{
     margin:0;
     padding:0;
+    font-family: Belleza; color:rgb(9, 0, 80);
 }
-
+/* Dudas: ¿se puede usar la paleta? */
+:root {
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
+--color-rosado:rgb(246, 198, 234);
+--color-amarillo:rgb(250, 244, 183);
+}
 header{
     display:flex;
-    border:5px solid black;
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    width: 100vw;
+    justify-content: space-between;
 }
+section logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:33%;
+    height:33%    
+}
+.logoPrincipal{
+    width:80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+/* ¿Cómo cambiar los tamaños de letra para */
+/* Al respecto de las barras de navegación. Se hicieron en columna para agrupar cosas que están más relacionadas:
+la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
 
 .barras{
     display:flex;
-    flex-direction:column;
-    border:5px solid black;
-    width:100vw;
+    justify-content: space-between;
+    width:66%;
 }
 .barra1{
     display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-start;
     padding:2% 2%;
-    border:5px solid black;
-    height: 30%;
+    margin-top:2%;
+    max-width: 33%; 
 }
 .caja1{
     display:flex;
-    order:0;
-    border:5px solid black;
+    flex-direction:column;
+    order:1;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;  
 }
 .caja2{
     display:flex;
-    order:1;
-    border:5px solid black;
+    flex-direction: column;
+    order:0;
+    font-size: 2rem;
+    max-width: 50%;
+}
+.Título{
+    align-items:center;
+    text-align:center;
+    font-size:4rem;
 }
 .barra2{
     display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items:center;
-    border:5px solid black;
-    height:70%;
-    padding:2% 2%; 
+    padding:2% 2%;
+    margin-right: 5%;
+    margin-top:2%;
+    max-width: 33%;
 }
-.caja3{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.caja3 {
     display:flex;
-    justify-content: space-between;
-    order:2;
-    border:5px solid black;
-    margin-left: 10%;
-    height:70%;
-    align-content: center;
+    flex-direction: column;
+    font-size: 2rem;
 }
 .caja4{
-    order:3;
-    border:5px solid black;
-    align-content: center;
-    
+    display:flex;
+    flex-direction: column;
+    font-size: 2rem;
 }
-/* Mover la barra 2 al centro */
+@keyframes aparece{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:0.7;
+    }}
+.secciónPrincipal{
+    background-color:var(--color-rosado);
+}
+.fondoPrincipal{
+    width:100%;
+    height:min-content;
+    animation-name:aparece;
+    animation-duration: 3000ms;     
+}
 
-/* <div class="caja-padre">
-    <div class="caja3">Texto</div>
-    <div class="caja4">Texto</div>
-</div>
-.caja-padre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-} */
+/* Hay alguna forma de alinear mejor la caja 4 con la caja 2? */
+/* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
