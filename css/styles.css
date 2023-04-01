@@ -17,12 +17,14 @@ header{
     width: 100vw;
     justify-content: space-between;
 }
+main{
+    height:min-content;
+}
 section logo{
     display:flex;
     align-items: center;
     justify-content: center;
-    width:33%;
-    height:33%    
+    width:33vw;
 }
 .logoPrincipal{
     width:80%;
@@ -37,17 +39,16 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
 .barras{
     display:flex;
     justify-content: space-between;
-    width:66%;
+    width:66vw;
 }
 .barra1{
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
     padding:2% 2%;
-    margin-top:2%;
-    max-width: 33%; 
+    margin-top:10%;
+    max-width: 50%; 
 }
 .caja1{
     display:flex;
@@ -56,19 +57,21 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     border: 2px solid black;
     text-align: center;
     justify-content: center;
-    font-size: 2rem;  
+    max-width: 100%;
+      
 }
 .caja2{
     display:flex;
     flex-direction: column;
     order:0;
-    font-size: 2rem;
-    max-width: 50%;
+    max-width: 100%;
+    font-size:100%;
 }
 .Título{
     align-items:center;
     text-align:center;
-    font-size:4rem;
+    max-width: 100%;
+    font-size:100%;
 }
 .barra2{
     display:flex;
@@ -78,35 +81,93 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     justify-content: space-between;
     padding:2% 2%;
     margin-right: 5%;
-    margin-top:2%;
-    max-width: 33%;
+    margin-top:10%;
+    max-width: 50%;
 }
 .caja3 {
     display:flex;
     flex-direction: column;
-    font-size: 2rem;
 }
 .caja4{
     display:flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    font-size: 2rem;
+    align-self: flex-end;
 }
 @keyframes aparece{
     0%{
         opacity:0;
+        
     }
     100%{
         opacity:0.7;
     }}
+@keyframes viene-oferta {
+
+    0%{
+       /*  opacity:0; */
+        transform:translateX(-100vw);
+        transform:rotate(0deg);
+    }
+    100%{
+       /*  opacity:1 */
+        transform:translateX(62vw);
+        transform:rotate(360deg);
+    }    
+}
 .secciónPrincipal{
     background-color:var(--color-rosado);
+    display:flex;
 }
 .fondoPrincipal{
-    width:100%;
+    display:flex;
+    width:100vw;
+    height: 100vh;
     height:min-content;
     animation-name:aparece;
-    animation-duration: 3000ms;     
+    animation-duration: 2s; 
 }
-
+.oferta{
+    background-color: red;
+    color:var(--color-blanco);
+    animation-name:viene-oferta;
+    animation-duration: 5s;
+    animation-timing-function:ease-out;
+    border-radius:50%;
+    border:2px solid red;
+    width: 10vw;
+    z-index: 2;
+    text-align: center;
+    font-size:1rem;
+    position: fixed;
+    top:62vh;
+    left:62vw;    
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    text-decoration:none;
+    color:rgb(9, 0, 80);
+    width: 100vw;
+    padding:5% 10%;
+}
+a{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
+}
+.firma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+footer{
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    width: 100vw;
+    justify-content: space-between;
+}
 /* Hay alguna forma de alinear mejor la caja 4 con la caja 2? */
 /* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
