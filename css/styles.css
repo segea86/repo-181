@@ -13,11 +13,12 @@
 }
 header{
     display:flex;
-    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
     width: 100vw;
     justify-content: space-between;
 }
 main{
+    background-image:url(./img/fondoPrincipal.jpg);
     height:min-content;
 }
 section logo{
@@ -49,6 +50,10 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     padding:2% 2%;
     margin-top:10%;
     max-width: 50%; 
+}
+a{
+    text-decoration:none;
+    
 }
 .caja1{
     display:flex;
@@ -128,13 +133,13 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     animation-duration: 2s; 
 }
 .oferta{
-    background-color: red;
-    color:var(--color-blanco);
+    background-color: var(--color-rosado);
+    color:rgb(9, 0, 80);
     animation-name:viene-oferta;
     animation-duration: 5s;
     animation-timing-function:ease-out;
     border-radius:50%;
-    border:2px solid red;
+    border:2px solid var(--color-rosado);
     width: 10vw;
     z-index: 2;
     text-align: center;
@@ -147,21 +152,22 @@ nav{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    text-decoration:none;
     color:rgb(9, 0, 80);
     width: 100vw;
     padding:5% 10%;
 }
-a{
+footer a{
     display:flex;
     justify-content:space-between;
     align-items: center;
     width: 100vw;
+    text-decoration: none;
 }
 .firma{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width:100%;
 }
 footer{
@@ -171,3 +177,7 @@ footer{
 }
 /* Hay alguna forma de alinear mejor la caja 4 con la caja 2? */
 /* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
+/* Mayores problemas: alinear; que queden los marcos justo con el tamaño del visor, ni más ni menos, poner tamaños de fuente que se adapten siempre a la caja que los contiene */
+/* Faltan los mediaQuery y los íconos */
+/* Falta ver si vamos a hacer el carrusel o no */
+/* Falta ver el tema de agregar el agente */

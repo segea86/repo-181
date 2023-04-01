@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Belleza; color:rgb(9, 0, 80);
+    box-sizing: border-box;
+}
+/* Dudas: ¿se puede usar la paleta? */
+:root {
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
+--color-rosado:rgb(246, 198, 234);
+--color-amarillo:rgb(250, 244, 183);
+}
+header{
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
+    display: flex;
+    justify-content:space-between;
+    padding:3vh 5vw;
+}
+header nav{
+    display: flex;
+    gap:3vw;
+    align-items: center;
+     /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+}
+
+header nav a{
+    text-decoration: none;
+}
+main{
+    min-height:90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10vh;
+    padding:10vh 3vw;    
+}
+
+main form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+
+}
+
+main form .inputContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+
+}
+
+main form .inputContainer input,select{
+    font-size:18px;
+    padding:10px;
+    border-bottom: ;
+}
+
+.btn-registrar{
+    background-color:rgb(30, 30, 30);
+    color: whitesmoke;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid rgb(30,30,30);
+    font-size:10px;
+    width:170px;
+}
+
+.btn-registrar:hover{
+    transition: 1s ease-in-out;
+    background-color:whitesmoke;
+
+}
+
+footer{
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    padding:3vh 5vw; /* el footer suele ser sencillo porque hay que poner directamente el mismo padding que el header y no mucho más */
+    text-align: center;
+    color:white;
+}
