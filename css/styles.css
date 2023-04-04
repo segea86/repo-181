@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     font-family: Belleza; color:rgb(9, 0, 80);
+    box-sizing: border-box;
 }
 /* Dudas: ¿se puede usar la paleta? */
 :root {
@@ -107,10 +108,11 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     height: 100%;
     width: auto;
 }
-img{
+.productos a img{
     height: 100%;
     width: auto;
 }
+
 .oferta{
     background-color: var(--color-rosado);
     color:rgb(9, 0, 80);
@@ -118,11 +120,11 @@ img{
     animation-duration: 5s;
     animation-timing-function:ease-out;
     border-radius:50%;
-    border:2px solid var(--color-rosado);
+    border:2vw solid var(--color-rosado);
     width: 10vw;
     z-index: 2;
-    text-align: center;
-    font-size:1rem;
+    text-align:center;
+    font-size:2vh;
     position: fixed;
     top:62vh;
     left:62vw;    
