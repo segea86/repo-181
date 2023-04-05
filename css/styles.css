@@ -20,11 +20,6 @@ header{
     align-items: center;
     padding: 3vh 5vw;
 }
-main{
-    background-image:url(./img/fondoPrincipal.jpg);
-    height:min-content;
-    width:100vw;
-}
 section #logo{
     display:flex;
     align-items: center;
@@ -34,32 +29,26 @@ section #logo{
 #logo{
     width:20vw;
 }
-/* ¿Cómo cambiar los tamaños de letra para */
-/* Al respecto de las barras de navegación. Se hicieron en columna para agrupar cosas que están más relacionadas:
-la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
+.barra{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+.barra>button{
+    text-decoration:none;
+    font-size: 2vw; 
+}
 .navegación{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80vw;
 }
-.barra{
-    display:flex;
-    justify-content: space-evenly;
-    width:100%;
-}
-/* .barra1{
-    display:flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding:2% 2%;
-    margin-top:10%;
-    max-width: 50%; 
-} */
-.barra>button{
-    text-decoration:none;
-    font-size: 2vw; 
+/* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
+la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
+main{
+    height:min-content;
+    width:100vw;
 }
 @keyframes aparece{
     0%{
@@ -70,7 +59,6 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     }
 }
 @keyframes viene-oferta {
-
     0%{
        /*  opacity:0; */
         transform:translateX(-100vw);
@@ -84,32 +72,38 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
 }
 #secciónPrincipal{
     background-color:var(--color-rosado);
+    display:inline-block;
 }
 #fondoPrincipal{
+    height:auto;
     width:100vw;
-    height: auto;
-    height:min-content;
     animation-name:aparece;
     animation-duration: 2s; 
 }
 .productos{
     background-color: var(--color-blanco);
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
-    height: 60vh;
+    height: min-content;
     width: 100%;
+    padding: 3vh 5vw;
 }
-.producto{
+.container-img{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     height: 100%;
-    width: auto;
 }
-.productos a img{
-    height: 100%;
-    width: auto;
+.container-img a{
+    display:flex;
+    justify-content:space-between;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container-img a img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .oferta{
