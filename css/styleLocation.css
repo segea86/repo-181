@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: Belleza; color:rgb(9, 0, 80);
+    box-sizing: border-box;
+}
+:root {
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
+--color-rosado:rgb(246, 198, 234);
+--color-amarillo:rgb(250, 244, 183);
+}
+header{
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
+    width: 100vw;
+    padding: 3vh 5vw;
+    justify-content: center;
+    height: 20vh;
+}
+h1{
+    text-align: center;
+}
+main{
+    height: 60vh;
+    width:100vw;
+    align-items: center center;
+    justify-content: center;
+    background-color: var(--color-blanco);
+    padding: 3vh 5vw;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center center;
+}
+footer{
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    width: 100vw;
+    height: 20vh;
+    padding: 3vh 5vw;
+    justify-content: end;
+    align-items: last baseline;
+}
+p{
+    text-align: center;
+    justify-content: end;
+    margin-top: 10vh;
+}
