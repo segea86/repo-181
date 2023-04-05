@@ -57,7 +57,7 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     margin-top:10%;
     max-width: 50%; 
 } */
-.barra>a{
+.barra>button{
     text-decoration:none;
     font-size: 2vw; 
 }
@@ -84,10 +84,8 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
 }
 #secciónPrincipal{
     background-color:var(--color-rosado);
-    display:flex;
 }
 #fondoPrincipal{
-    display:flex;
     width:100vw;
     height: auto;
     height:min-content;
@@ -126,9 +124,9 @@ la marca con la registración y el login con la cotización ¿es correcto o nos 
     z-index: 2;
     text-align:center;
     font-size:2vh;
-    position: fixed;
-    top:62vh;
-    left:62vw;    
+    position:absolute;
+    left:62vw;
+    top:62vh; 
 }
 nav{
     display:flex;
@@ -169,14 +167,14 @@ footer{
     padding: 3vh 5vw;
 }
 
-#login{
+.btn-login{
     border: 2px solid var(--color-blanco);
     border-radius:30%;
     background-color: var(--color-rosado);
     padding:1vw;
 }
 
-#registro{
+.btn-register{
     border: 2px solid var(--color-rosado);
     border-radius:30%;
     background-color: var(--color-blanco);
