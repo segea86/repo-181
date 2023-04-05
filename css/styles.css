@@ -18,6 +18,7 @@ header{
     width: 100vw;
     justify-content: space-between;
     align-items: center;
+    padding: 3vh 5vw;
 }
 main{
     background-image:url(./img/fondoPrincipal.jpg);
@@ -165,6 +166,21 @@ footer{
     background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
     width: 100vw;
     justify-content: space-between;
+    padding: 3vh 5vw;
+}
+
+#login{
+    border: 2px solid var(--color-blanco);
+    border-radius:30%;
+    background-color: var(--color-rosado);
+    padding:1vw;
+}
+
+#registro{
+    border: 2px solid var(--color-rosado);
+    border-radius:30%;
+    background-color: var(--color-blanco);
+    padding:1vw;
 }
 /* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
 /* Mayores problemas: alinear; que queden los marcos justo con el tamaño del visor, ni más ni menos, poner tamaños de fuente que se adapten siempre a la caja que los contiene */
