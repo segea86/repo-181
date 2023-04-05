@@ -5,7 +5,6 @@
     font-family: Belleza; color:rgb(9, 0, 80);
     box-sizing: border-box;
 }
-/* Dudas: ¿se puede usar la paleta? */
 :root {
 --color-celeste:rgb(205, 240, 234);
 --color-blanco:rgb(249, 249, 249);
@@ -28,15 +27,12 @@ section #logo{
 }
 #logo{
     width:20vw;
+    border-radius: 10%;
 }
 .barra{
     display:flex;
     justify-content: space-evenly;
     width:100%;
-}
-.barra>button{
-    text-decoration:none;
-    font-size: 2vw; 
 }
 .navegación{
     display: flex;
@@ -46,8 +42,19 @@ section #logo{
 }
 /* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
 la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
+.barra>button{
+    text-decoration:none;
+    font-size: 2vw;
+    border-radius: 30%;
+    border: 2px solid var(--color-rosado);
+    background-color: var(--color-blanco);
+    padding:1vw;
+}
+#btn-login{
+    border: 2px solid var(--color-blanco);
+    background-color: var(--color-rosado);
+}
 main{
-    height:min-content;
     width:100vw;
 }
 @keyframes aparece{
@@ -60,44 +67,37 @@ main{
 }
 @keyframes viene-oferta {
     0%{
-       /*  opacity:0; */
-        transform:translateX(-100vw);
+        opacity:0;
         transform:rotate(0deg);
     }
     100%{
-       /*  opacity:1 */
-        transform:translateX(62vw);
+        opacity:1;
         transform:rotate(360deg);
     }    
 }
-#secciónPrincipal{
-    background-color:var(--color-rosado);
-    display:inline-block;
+.secciónPrincipal{
+    height: fit-content;
+    background-color:var(--color-blanco);
 }
-#fondoPrincipal{
-    height:auto;
+.fondoPrincipal{
     width:100vw;
     animation-name:aparece;
-    animation-duration: 2s; 
+    animation-duration: 2s;
 }
 .productos{
     background-color: var(--color-blanco);
     display:flex;
     justify-content: space-between;
-    align-items:center;
     height: min-content;
     width: 100%;
     padding: 3vh 5vw;
 }
 .container-img{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
     height: 100%;
 }
 .container-img a{
     display:flex;
-    justify-content:space-between;
     max-width: 100%;
     max-height: 100%;
 }
@@ -105,7 +105,6 @@ main{
     max-width: 100%;
     max-height: 100%;
 }
-
 .oferta{
     background-color: var(--color-rosado);
     color:rgb(9, 0, 80);
@@ -122,7 +121,17 @@ main{
     left:62vw;
     top:62vh; 
 }
-nav{
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    width: 100vw;
+    justify-content: space-between;
+    padding: 3vh 5vw;
+}
+footer nav{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -130,13 +139,17 @@ nav{
     width: 100vw;
     margin-top: 2vh;
 }
-footer a{
+footer nav a{
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     text-decoration: none;
     font-size: 3vh;
+}
+h1{
+    width:100%;
+    height:100%;
 }
 .firma{
     width:100%
@@ -149,30 +162,6 @@ p{
     width:100%;
     font-size: 2.5vh;
     margin-bottom: 2.5vh;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 5vh;
-    align-items: center;
-    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
-    width: 100vw;
-    justify-content: space-between;
-    padding: 3vh 5vw;
-}
-
-.btn-login{
-    border: 2px solid var(--color-blanco);
-    border-radius:30%;
-    background-color: var(--color-rosado);
-    padding:1vw;
-}
-
-.btn-register{
-    border: 2px solid var(--color-rosado);
-    border-radius:30%;
-    background-color: var(--color-blanco);
-    padding:1vw;
 }
 /* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
 /* Mayores problemas: alinear; que queden los marcos justo con el tamaño del visor, ni más ni menos, poner tamaños de fuente que se adapten siempre a la caja que los contiene */
