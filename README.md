@@ -3,8 +3,8 @@ https://www.figma.com/file/7UbnQjQeKkDqAqBicFVfef/Untitled?node-id=0%3A1&t=ODShF
 
 Integrantes del grupo 4 comisión 181:
 
-Egea, H. Sebastián
-Lopez, Pablo
-Mendez, Brenda
-Montenegro, Romina
-Viedma, Marcio.
+-Egea, H. Sebastián
+-Lopez, Pablo
+-Mendez, Brenda
+-Montenegro, Romina
+-Viedma, Marcio
