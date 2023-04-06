@@ -92,27 +92,26 @@ main{
     animation-name:aparece;
     animation-duration: 2s;
 }
+
 .productos{
-    background-color: var(--color-blanco);
-    display:flex;
-    justify-content: space-between;
-    height: min-content;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 3vh 5vw;
-}
-.container-img{
-    display:flex;
-    height: 100%;
-}
-.container-img a{
-    display:flex;
-    max-width: 100%;
-    max-height: 100%;
-}
-.container-img a img{
-    max-width: 100%;
-    max-height: 100%;
-}
+    justify-content: space-between;
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado),var(--color-blanco));
+}    
+.card-producto{width: 500px;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;}
+.card-producto img{ width: 100%;}
+
+
+
 .oferta{
     background-color: var(--color-rosado);
     color:rgb(9, 0, 80);
