@@ -37,7 +37,7 @@ section #logo{
     width: 80vw;
     gap: 10vh;
 }
-.barra>button{
+.barra-1>button{
     text-decoration:none;
     font-size: 2vw;
     border-radius: 30%;
@@ -49,16 +49,31 @@ section #logo{
     border: 2px solid var(--color-blanco);
     background-color: var(--color-rosado);
 }
-nav.barra{
+nav.barra-1{
     display:flex;
+   
     flex-direction: row;
     justify-content: space-between;
     max-width:100%;
 }
-.barra a{
+nav.barra-2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width:100%;
+    text-decoration: none;
+    }
+    .nav-list{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width:100%;
+        text-decoration: none;
+        font-size:1.5vw;
+    }
+a{
     display:flex;
     text-decoration: none;
-    font-size:1.5vw;
 }
 /* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
 la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
@@ -167,6 +182,82 @@ p{
     font-size: 2.5vh;
     margin-bottom: 2.5vh;
 }
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5vw;
+}
+.abrirMenu{
+    display : none;
+}
+ .cerrarMenu{
+display: none;
+}
+@media screen and (max-width: 900px){
+    
+    header{
+        display:flex;
+        width: 100vw;
+        gap:5vw;
+        align-items: flex-start;
+       
+    }
+    .oferta{
+    position: relative;
+    left: 80vw;
+   
+   }
+   
+    .abrirMenu{
+        display: block;
+        border: 0;
+        font-size: 2vw;
+        background-color: transparent;
+        text-align: end;
+        cursor: pointer;
+        align-items: end;
+        
+       
+
+    }
+    .cerrarMenu{
+        display: block;
+        border: 0;
+        font-size: 2vw;
+        background-color: transparent;
+        cursor: pointer;
+
+    }
+
+    .barra2{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2vw;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2vw;
+        box-shadow: 0 0 0 100vmax rgb( 0 , 0, 0, .5);
+    }
+    
+   
+    .barra2.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        
+    }
+  
+
+}
+    
+
 /* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
 /* Mayores problemas: alinear; que queden los marcos justo con el tamaño del visor, ni más ni menos, poner tamaños de fuente que se adapten siempre a la caja que los contiene */
 /* Faltan los mediaQuery y los íconos */
