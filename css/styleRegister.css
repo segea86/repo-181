@@ -18,22 +18,47 @@ header{
     justify-content:space-between;
     align-items: center;
     padding:3vh 5vw;
-  
+    width:100vw;
 }
-header nav{
+.bienvenida{
     display: flex;
-    gap:3vw;
+    justify-content:space-between;
+    align-items:center;
+    gap:6vw;
+    max-width: 50%;
+}
+section #logo{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    max-width:auto;
+    max-height: 6vw;
+}
+header .navegación{
+    display: flex;
     height: 40px;
     align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
      /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
 }
-header nav a{
+header .navegación a{
     text-decoration: none;
+    padding: 1vw;
+    font-size: 1.5rem;
 }
-h1{ font-size: 60px;}
+h1{ font-size: 3rem;}
 h2{font-size: 30px;}
-a{font-size: 20px;}
 
+main{
+    min-height:90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10vh;
+    padding:10vh 3vw;
+    background-color: var(--color-blanco);    
+}
 form{
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -51,7 +76,7 @@ main{
     background-color: snow
 }
 label{color:rgb(9, 0, 80);
-font-size: 25px;
+font-size: 1.5rem;
 font-weight: 600;
 margin-bottom: 10px;}
 
@@ -75,21 +100,21 @@ main form .inputContainer input,select{
     box-shadow: -3px 3px 7px 3px rgba(63, 63, 63, 0.25);
     outline: none;
 }
- 
 .btn-registrar{
-    background-color: rgb(252, 210, 217);
+    background-color: var(--color-rosado);
     color:var(--color-azul);
     padding:10px;
     border-radius:5px;
     border:1px solid rgb(30,30,30);
-    font-size:20px;
+    font-size:1.5rem;
     width:170px;
     cursor: pointer;
+    align-self: center;
 }
-
+ 
 .btn-registrar:hover{
-    transition: 1s ease-in-out;
-    background-color:var(--color-blanco);
+    transition: .5s ease-in-out;
+    background-color: rgb(250, 223, 238);
 }
 
 footer{
@@ -97,4 +122,5 @@ footer{
     padding:3vh 5vw; /* el footer suele ser sencillo porque hay que poner directamente el mismo padding que el header y no mucho más */
     text-align: center;
     color:var(--color-blanco);
+    font-size: 1.5rem;
 }

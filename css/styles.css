@@ -13,68 +13,26 @@
 }
 header{
     display:flex;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco),var(--color-rosado));
     width: 100vw;
+    max-height: fit-content;
     justify-content: space-between;
-    gap:5vw;
     align-items: center;
     padding: 3vh 5vw;
+    height: 8vw;
 }
 section #logo{
     display:flex;
     align-items: center;
-    justify-content: center;
-    width:20vw;
+    justify-content:space-between;
+    max-width:auto;
+    max-height: 6vw;
 }
-#logo{
-    width:20vw;
-    border-radius: 10%;
-    color: transparent;
-}
-.navegación{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80vw;
-    gap: 10vh;
-}
-.barra-1>button{
-    text-decoration:none;
-    font-size: 2vw;
-    border-radius: 30%;
-    border: 2px solid var(--color-rosado);
-    background-color: var(--color-blanco);
-    padding:1vw;
-}
-#btn-login{
-    border: 2px solid var(--color-blanco);
-    background-color: var(--color-rosado);
-}
-nav.barra-1{
-    display:flex;
-   
-    flex-direction: row;
-    justify-content: space-between;
-    max-width:100%;
-}
-nav.barra-2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width:100%;
-    text-decoration: none;
-    }
-    .nav-list{
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width:100%;
-        text-decoration: none;
-        font-size:1.5vw;
-    }
+
 a{
     display:flex;
     text-decoration: none;
+    font-size: 2rem;
 }
 /* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
 la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
@@ -117,16 +75,15 @@ main{
     justify-content: space-between;
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado),var(--color-blanco));
 }    
-.card-producto{width: 400px;
-    box-sizing: border-box;
-        padding: 20px;        
-        box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;       
-        justify-content: space-between;}
+.card-producto{
+    width: 400px;
+    padding: 20px;        
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;       
+    justify-content: space-between;}
 .card-producto img{ width: 100%;}
-
 
 
 

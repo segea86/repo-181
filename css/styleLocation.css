@@ -13,13 +13,42 @@
 }
 header{
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
-    width: 100vw;
-    padding: 3vh 5vw;
-    justify-content: center;
-    height: 20vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:3vh 5vw;
+    width:100vw;
 }
-h1{
+.bienvenida{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:6vw;
+    max-width: 50%;
+}
+section #logo{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    max-width:auto;
+    max-height: 6vw;
+}
+header .navegación{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+     /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+}
+header .navegación a{
+    text-decoration: none;
+    padding: 1vw;
+    font-size: 1.5rem;
+}
+h2{
     text-align: center;
+    font-size: 2rem;
 }
 main{
     height: 60vh;
@@ -47,4 +76,5 @@ p{
     text-align: center;
     justify-content: end;
     margin-top: 10vh;
+    font-size: 1.5rem;
 }
