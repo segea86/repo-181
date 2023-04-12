@@ -13,13 +13,13 @@
 }
 header{
     display:flex;
-    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco),var(--color-rosado));
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado),var(--color-celeste),var(--color-amarillo));
     width: 100vw;
     max-height: fit-content;
     justify-content: space-between;
     align-items: center;
     padding: 3vh 5vw;
-    height: 8vw;
+    height: 12vh;
 }
 section #logo{
     display:flex;
@@ -32,7 +32,7 @@ section #logo{
 a{
     display:flex;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 /* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
 la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
@@ -44,27 +44,44 @@ main{
         opacity:0;      
     }
     100%{
-        opacity:0.7;
-    }
-}
-@keyframes viene-oferta {
-    0%{
-        opacity:0;
-        transform:rotate(0deg);
-    }
-    100%{
         opacity:1;
-        transform:rotate(360deg);
-    }    
+    }
 }
 .secciónPrincipal{
-    height: fit-content;
-    background-color:var(--color-blanco);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100vw;
+    background-image: linear-gradient(to bottom,var(--color-blanco),var(--color-rosado),var(--color-celeste),var(--color-amarillo));
+    padding: 3vh 5vw;
 }
 .fondoPrincipal{
-    width:100vw;
+    display:flex;
+    width:20vw;
+    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    border-radius: 1rem;
     animation-name:aparece;
-    animation-duration: 2s;
+    animation-duration: 2s;   
+}
+#timer{
+    font-size: 1.3rem;
+    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    border-radius: 1rem;
+    animation-name:aparece;
+    animation-duration: 2s; 
+}
+.oferta{
+    display: flex;
+    color:rgb(9, 0, 80);
+    width: 80%;
+    text-align:center;
+    font-size: 1.25rem;
+    padding: 3vh 5vw;
+}
+
+span{
+    color:red !important;
+    font-size: 2rem;
 }
 
 .productos{
@@ -73,7 +90,7 @@ main{
     justify-content: center;
     padding: 3vh 5vw;
     justify-content: space-between;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado),var(--color-blanco));
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-celeste),var(--color-blanco));
 }    
 .card-producto{
     width: 400px;
@@ -84,25 +101,6 @@ main{
     flex-direction: column;       
     justify-content: space-between;}
 .card-producto img{ width: 100%;}
-
-
-
-.oferta{
-    background-color: var(--color-rosado);
-    color:rgb(9, 0, 80);
-    animation-name:viene-oferta;
-    animation-duration: 5s;
-    animation-timing-function:ease-out;
-    border-radius:50%;
-    border:2vw solid var(--color-rosado);
-    width: 10vw;
-    z-index: 2;
-    text-align:center;
-    font-size:1vw;
-    position:absolute;
-    left:62vw;
-    top:62vh; 
-}
 footer{
     display: flex;
     flex-direction: column;
@@ -162,9 +160,13 @@ display: none;
         align-items: flex-start;
        
     }
+    main{
+        display:flex;
+        width: 100vw;
+    }
     .oferta{
-    position: relative;
-    left: 80vw;
+        width: 20%;
+        font-size: 0.5rem;
    
    }
    
@@ -176,6 +178,7 @@ display: none;
         text-align: end;
         cursor: pointer;
         align-items: end;
+        z-index:2;
         
        
 
@@ -202,7 +205,24 @@ display: none;
         padding: 2vw;
         box-shadow: 0 0 0 100vmax rgb( 0 , 0, 0, .5);
     }
-    
+    .productos{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3vh 5vw;
+        justify-content: space-between;
+        background-image: linear-gradient(to top,var(--color-blanco),var(--color-celeste),var(--color-blanco));
+    }    
+    .card-producto{
+        width: 80%;
+        padding: 20px;        
+        box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;       
+        justify-content: space-between;}
+    .card-producto img{ width: 100%;}
    
     .barra2.visible{
         opacity: 1;
