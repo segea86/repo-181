@@ -2,18 +2,19 @@
 *{
     margin:0;
     padding:0;
-    font-family: Belleza; color:rgb(9, 0, 80);
+    font-family: Belleza; color:rgb(40, 40, 40);
     box-sizing: border-box;
 }
 :root {
 --color-celeste:rgb(205, 240, 234);
 --color-blanco:rgb(249, 249, 249);
 --color-rosado:rgb(246, 198, 234);
+--color-rosado2:rgb(225, 15, 204);
 --color-amarillo:rgb(250, 244, 183);
 }
 header{
     display:flex;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado),var(--color-celeste),var(--color-amarillo));
+    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-blanco));
     width: 100vw;
     max-height: fit-content;
     justify-content: space-between;
@@ -52,35 +53,51 @@ main{
     justify-content:space-between;
     align-items: center;
     width:100vw;
-    background-image: linear-gradient(to bottom,var(--color-blanco),var(--color-rosado),var(--color-celeste),var(--color-amarillo));
+    background-color:var(--color-blanco);
     padding: 3vh 5vw;
 }
 .fondoPrincipal{
     display:flex;
     width:20vw;
-    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    box-shadow: -3px 3px 7px 3px rgb(40, 40, 40);
     border-radius: 1rem;
     animation-name:aparece;
     animation-duration: 2s;   
 }
+.seccionSecundaria{
+    display: flex;
+    justify-content:space-between;
+    width:30vw;
+    align-items:center;
+}
 #timer{
-    font-size: 1.3rem;
-    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
+    font-size:2rem;
+    box-shadow: -3px 3px 7px 3px rgb(40,40,40);
     border-radius: 1rem;
     animation-name:aparece;
-    animation-duration: 2s; 
+    animation-duration: 2s;
+    min-height: 10vh;
+    max-width:35vw;
+    align-self: center;
+    justify-content:center;
+    margin-top: 5vw;
+    margin-left: 15vw;
+}
+
+#timer:hover{
+    transition: 1s ease-in-out;
+    background-color: rgb(250, 223, 238);
 }
 .oferta{
-    display: flex;
-    color:rgb(9, 0, 80);
-    width: 80%;
+    color:rgba(50, 50, 50, 0.50);
+    width: 100%;
     text-align:center;
     font-size: 1.25rem;
     padding: 3vh 5vw;
 }
 
 span{
-    color:red !important;
+    color: var(--color-rosado2) !important;
     font-size: 2rem;
 }
 
@@ -90,12 +107,12 @@ span{
     justify-content: center;
     padding: 3vh 5vw;
     justify-content: space-between;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-celeste),var(--color-blanco));
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-amarillo),var(--color-blanco));
 }    
 .card-producto{
     width: 400px;
     padding: 20px;        
-    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;       
@@ -115,7 +132,7 @@ footer nav{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    color:rgb(9, 0, 80);
+    color:rgb(40, 40, 40);
     width: 100vw;
     margin-top: 2vh;
     padding: 2vh 5vw;
@@ -151,7 +168,7 @@ p{
  .cerrarMenu{
 display: none;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
     
     header{
         display:flex;
@@ -160,15 +177,127 @@ display: none;
         align-items: flex-start;
        
     }
-    main{
+    .secciónPrincipal{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width:100vw;
+        background-color:var(--color-blanco);
+        padding: 3vh 5vw;
+    }
+    .fondoPrincipal{
         display:flex;
-        width: 100vw;
+        width:20vw;
+        box-shadow: -3px 3px 7px 3px rgb(40, 40, 40);
+        border-radius: 1rem;
+        animation-name:aparece;
+        animation-duration: 2s;   
+    }
+    .seccionSecundaria{
+        display: flex;
+        justify-content:space-between;
+        width:30vw;
+        align-items:center;
+    }
+    #timer{
+        font-size:2rem;
+        box-shadow: -3px 3px 7px 3px rgb(40,40,40);
+        border-radius: 1rem;
+        animation-name:aparece;
+        animation-duration: 2s;
+        min-height: 10vh;
+        max-width:35vw;
+        align-self: center;
+        justify-content:center;
+        margin-top: 5vw;
+        margin-left: 15vw;
+    }
+    
+    #timer:hover{
+        transition: 1s ease-in-out;
+        background-color: rgb(250, 223, 238);
     }
     .oferta{
-        width: 20%;
-        font-size: 0.5rem;
-   
-   }
+        color:rgba(50, 50, 50, 0.50);
+        margin-top: 10vh;
+        width: 100%;
+        text-align:center;
+        font-size: 0.75rem;
+        padding: 3vh 5vw;
+    }
+    
+    span{
+        color: var(--color-rosado2) !important;
+        font-size: 2rem;
+    }
+    
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 3vh 5vw;
+        justify-content: space-between;
+        background-image: linear-gradient(to top,var(--color-blanco),var(--color-amarillo),var(--color-blanco));
+    }    
+    .card-producto{
+        width: 400px;
+        padding: 20px;        
+        box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;       
+        justify-content: space-between;}
+    .card-producto img{ width: 100%;}
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
+        background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+        width: 100vw;
+        justify-content: space-between;
+        padding: 3vh 5vw;
+    }
+    footer nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        color:rgb(40, 40, 40);
+        width: 100vw;
+        margin-top: 2vh;
+        padding: 2vh 5vw;
+    }
+    footer nav a{
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+    h1{
+        width:100%;
+        height:100%;
+    }
+    #firma{
+        width:100%
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:100%;
+        font-size: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+    .nav-list{
+        display: flex;
+        list-style-type: none;
+        gap: 1.5vw;
+    }
+    .abrirMenu{
+        display : none;
+    }
+     .cerrarMenu{
+    display: none;
+    }
    
     .abrirMenu{
         display: block;
@@ -199,31 +328,12 @@ display: none;
         flex-direction: column;
         align-items: end;
         gap: 2vw;
-        top: 0;
+        top: 0; 
         right: 0;
         bottom: 0;
         padding: 2vw;
-        box-shadow: 0 0 0 100vmax rgb( 0 , 0, 0, .5);
     }
-    .productos{
-        width: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 3vh 5vw;
-        justify-content: space-between;
-        background-image: linear-gradient(to top,var(--color-blanco),var(--color-celeste),var(--color-blanco));
-    }    
-    .card-producto{
-        width: 80%;
-        padding: 20px;        
-        box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.25);
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;       
-        justify-content: space-between;}
-    .card-producto img{ width: 100%;}
-   
+  
     .barra2.visible{
         opacity: 1;
         visibility: visible;
