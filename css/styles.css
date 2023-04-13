@@ -200,7 +200,7 @@ display: none;
         align-items:center;
     }
     #timer{
-        font-size:2rem;
+        font-size:1.5rem;
         box-shadow: -3px 3px 7px 3px rgb(40,40,40);
         border-radius: 1rem;
         animation-name:aparece;
@@ -219,7 +219,7 @@ display: none;
     }
     .oferta{
         color:rgba(50, 50, 50, 0.50);
-        margin-top: 10vh;
+        margin-top: 15vh;
         width: 100%;
         text-align:center;
         font-size: 0.75rem;
@@ -228,7 +228,7 @@ display: none;
     
     span{
         color: var(--color-rosado2) !important;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .productos{
@@ -302,7 +302,7 @@ display: none;
     .abrirMenu{
         display: block;
         border: 0;
-        font-size: 2vw;
+        font-size: 2rem;
         background-color: transparent;
         text-align: end;
         cursor: pointer;
@@ -315,7 +315,7 @@ display: none;
     .cerrarMenu{
         display: block;
         border: 0;
-        font-size: 2vw;
+        font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
 
