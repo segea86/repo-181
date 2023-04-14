@@ -6,7 +6,7 @@ const usuarios = []
 
 
 formularioUsuarios.addEventListener("submit", (event) =>{
-    event.preventDefault()
+    event.preventDefault();
     console.log(formularioUsuarios.provincia.value)
     usuarios.push({
         nombre: formularioUsuarios.nombre.value,
@@ -15,3 +15,18 @@ formularioUsuarios.addEventListener("submit", (event) =>{
         provincia:formularioUsuarios.provincia.value
     })
 })
+
+window.addEventListener("load", function(){
+    document.getElementById("viewAlert").addEventListener("click", function(){
+    alert("Gracias por elerginos");
+    
+    })
+})
+
+
+  function validar(){
+    console.log('Se registro correctamente');
+    formularioUsuarios.reset();
+    return false;
+  }
+

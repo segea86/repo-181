@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/styleRegister.css">
+   
 </head>
 <body>
     <header>
@@ -28,7 +29,6 @@
         </section>     
     </header>
     <main>
-        <form action="https://formsubmit.co/kanzeon87@gmail.com" method="POST">
         <h1>Registrate</h1>
         <form class="formUsuarios">
             <div class="inputContainer">
@@ -53,14 +53,17 @@
                 </select>
             </div>
                 <!-- una manera sería con un button type=submit, ahora  -->
-            <input type="submit" value="Enviar" class="btn-registrar">
+                
+            <input type="submit" value="Enviar" class="btn-registrar" id="viewAlert" onclick="return validar()">
         </form>
         <div id="usuariosContainer"></div>
     </main>
     <footer>
         <p>Argentina Programa 4.0 - UTN - Comisión 181 a cargo de Matías Gimenez - Grupo 4: Egea - Lopez - Mendez - Montenegro - Viedma ©</p>
     </footer>
-    <script src="./js/scriptRegister.js"></script>
-    <script src="./js/scriptHamburguesa.js"></script>   
+    <script src="/js/scriptRegister.js"></script>
+    <script src="/js/scriptHamburguesa.js"></script>
+    
+    
 </body>
 </html>
