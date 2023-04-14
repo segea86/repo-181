@@ -50,33 +50,22 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-main{
-    display:flex;
-    justify-content: space-between;
-    height: 60vh;
-    width:100vw;
-    align-items: center center;
-    justify-content: center;
-    background-color: var(--color-blanco);
-    padding: 3vh 5vw;
-}
-main img{
+.container{
+    width: 100vw;
     display: flex;
-    width:40%;
-    padding: 3vh 5vw;
-    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
-    border-radius: 1rem;
+    justify-content: space-evenly;
+    background-color: transparent;
 }
-iframe{
+
+.cuadro{
+    padding: 20px;        
+    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+    border-radius: 1rem;
     display: flex;
-    width: 50%;
-    height: 100%;
-    justify-content: center;
-    align-items: center center;
-    padding: 3vh 5vw;
-    box-shadow: -3px 3px 7px 3px rgb(9,0,80);
-    border-radius: 1rem;
-}
+              
+        }
+
+
 footer{
     background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
     width: 100vw;
