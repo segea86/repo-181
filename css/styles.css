@@ -116,18 +116,28 @@ p#timer{
     flex-wrap: wrap;
     justify-content: center;
     padding: 3vh 5vw;
+    gap:2vw;
     justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
 }    
 .card-producto{
     width: 400px;
+    height: 370px;
     padding: 20px;        
     box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;       
-    justify-content: space-between;}
-.card-producto img{ width: 100%;}
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.card-producto img{
+    max-height:100%;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;}
 footer{
     display: flex;
     flex-direction: column;

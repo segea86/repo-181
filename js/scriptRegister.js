@@ -1,8 +1,6 @@
 const formularioUsuarios = document.querySelector(".formUsuarios");
 const usuariosContainerHTML = document.querySelector("#usuariosContainer");
-
 const usuarios = [];
-
 formularioUsuarios.addEventListener("submit", (event) => {
   event.preventDefault();
   if (camposCompletos()) {
@@ -17,8 +15,6 @@ formularioUsuarios.addEventListener("submit", (event) => {
     alert("Complete todos los campos por favor. Recuerde usar una cuenta de gmail o hotmail");
   }
 });
-
-
 function camposCompletos() {
   nombre = formularioUsuarios.nombre.value;
   email = formularioUsuarios.email.value;
@@ -29,7 +25,6 @@ function camposCompletos() {
     return true;
   }
 }
-
 function esEmail(){
   if (((email.includes("@gmail"))||(email.includes("@hotmail")))&&(email)){
     return true;}
