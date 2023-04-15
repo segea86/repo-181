@@ -50,7 +50,6 @@ h2{
     text-align: center;
     font-size: 2rem;
 }
-<<<<<<< HEAD
 main{
     display:flex;
     justify-content: space-between;
@@ -65,19 +64,12 @@ main{
     width: 100vw;
     display: flex;
     justify-content: space-between;
-=======
-.container{
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
->>>>>>> bc00399f306e239a25d16d744c6febf7eac096ba
     background-color: transparent;
 }
 
 .cuadro{
     padding: 20px;        
     box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
-<<<<<<< HEAD
     border-radius: 25px;
     display: flex;
     width: 30vw;
@@ -92,14 +84,6 @@ iframe{
     width: 100%;
     height: 100%;
 }
-=======
-    border-radius: 1rem;
-    display: flex;
-              
-        }
-
-
->>>>>>> bc00399f306e239a25d16d744c6febf7eac096ba
 footer{
     background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
     width: 100vw;
