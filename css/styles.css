@@ -137,7 +137,9 @@ p#timer{
     max-height:100%;
     max-width: 100%;
     align-items: center;
-    align-content: center;}
+    align-content: center;
+    align-self: center;
+}
 footer{
     display: flex;
     flex-direction: column;
