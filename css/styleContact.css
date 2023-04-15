@@ -16,14 +16,14 @@
     --color-letra: rgb(40,40,40);
     --color-sombra:rgba(40, 40, 40, 0.25)
     }
-    header{
-        display:flex;
-        background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
-        width: 100vw;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3vh 5vw;
-        height: 14vh;
+header{
+    display:flex;
+    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    height: 14vh;
     }
 .bienvenida{
     display: flex;
@@ -52,7 +52,7 @@ header .navegación a{
     padding: 1vw;
     font-size: 1.5rem;
 }
-h1{ font-size: 3rem;}
+h1{font-size: 3rem;}
 h2{font-size: 30px;}
 
 main{
@@ -62,15 +62,13 @@ main{
     flex-direction: column;
     gap:10vh;
     padding:10vh 3vw;
-    background-color: var(--color-blanco);    
+    background-color:var(--color-blanco);    
 }
 
 footer{
-    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
-    padding:3vh 5vw; /* el footer suele ser sencillo porque hay que poner directamente el mismo padding que el header y no mucho más */
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
+    padding:3vh 5vw;
     text-align: center;
-    color:var(--color-blanco);
-    font-size: 1.5rem;
 }
 .nav-list{
     display: flex;
@@ -93,7 +91,7 @@ display: none;
 @media screen and (max-width: 768px){
     
     header{
-        background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
+        background-image: repeating-linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -116,28 +114,24 @@ display: none;
     }
     header .navegación{
         display: flex;
+        flex-direction: column;
         height: 40px;
         align-items: center;
         justify-content: space-between;
         max-width: 50%;
-         /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+        /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
     }
     header .navegación a{
         text-decoration: none;
         padding: 1vw;
-        font-size: 1.5rem;
-    }
-    h1{ font-size: 1.5rem;}
-    h2{font-size: 1.25rem;}
-    
- 
-    footer{
-        background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
-        padding:3vh 5vw; /* el footer suele ser sencillo porque hay que poner directamente el mismo padding que el header y no mucho más */
-        text-align: center;
-        color:var(--color-blanco);
         font-size: 1rem;
+        text-align: right;
     }
+    h1{
+        font-size: 1.5rem;
+        max-width: fit-content;
+    }
+    h2{font-size: 1.25rem;}
     .nav-list{
         display: flex;
         list-style-type: none;
@@ -160,9 +154,6 @@ display: none;
         align-items: end;
         z-index:2;
         margin-left:22vw;
-        
-       
-
     }
     .cerrarMenu{
         display: block;
@@ -173,7 +164,6 @@ display: none;
         text-align: end;
         align-items: end;
         margin-left:22vw;
-
     }
 
     .barra2{
@@ -197,11 +187,98 @@ display: none;
     
     .nav-list{
         flex-direction: column;
-        align-items: end;
-        
+        align-items: end;        
     }
- .link-menu{
-    font-size: 0.75rem;
-    text-align: right;
- }
+    main{
+        min-height:90vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap:10vh;
+        padding:10vh 3vw;
+        background-color: var(--color-blanco);    
+    }
+
+    label{color:rgb(9, 0, 80);
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 10px;}
+        
+        main form{
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+            gap:3vh;
+        }
+    .inputContainer{
+       display: flex;
+       flex-direction: column;
+       text-align: left;
+    
+    }
+    main form .inputContainer input,select{
+        border: 2px solid #f0faf1;
+        font-size:18px;
+        padding: 10px;
+        border-radius: 10px;    
+        box-shadow: -3px 3px 7px 3px rgba(63, 63, 63, 0.25);
+        outline: none;
+    }
+    .btn-registrar{
+        background-color: var(--color-rosado);
+        color:var(--color-azul);
+        padding:10px;
+        border-radius:5px;
+        border:1px solid rgb(30,30,30);
+        font-size:1rem;
+        width:80%;
+        cursor: pointer;
+        align-self: center;
+    }
+     
+    .btn-registrar:hover{
+        transition: .5s ease-in-out;
+        background-color: rgb(250, 223, 238);
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        align-items: center;
+        background-image: repeating-linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
+        width: 100vw;
+        justify-content: space-between;
+        padding: 3vh 5vw;
+    }
+    footer nav{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        color:var(--color-letra);
+        width: 100vw;
+        margin-top: 2vh;
+        padding: 2vh 5vw;
+    }
+    footer nav a{
+        text-decoration: none;
+        font-size: 1.5vw;
+    }
+    h1{
+        width:100%;
+        height:100%;
+    }
+    #firma{
+        width:100%
+    }
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width:100%;
+        font-size: 2.5vh;
+        margin-bottom: 2.5vh;
+    }
+
 }

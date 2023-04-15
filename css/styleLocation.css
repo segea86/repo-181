@@ -118,16 +118,16 @@ footer>p{
  .cerrarMenu{
 display: none;
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 916px){
     
     header{
-        display:flex;
-        width: 100vw;
-        gap:5vw;
-        align-items: flex-start;
-       
+        background-image: repeating-linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding:3vh 5vw;
+        width:100vw;
     }
-    
     .bienvenida{
         display: flex;
         justify-content:space-between;
@@ -135,9 +135,95 @@ display: none;
         gap:6vw;
         max-width: 50%;
     }
-    .bienvenida h2{
-        font-size: 1.25rem;
+    section #logo{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        max-width:auto;
+        max-height: 6vw;
+    }
+    header .navegación{
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 50%;
+        /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+    }
+    header .navegación a{
+        text-decoration: none;
+        padding: 1vw;
+        font-size: 1rem;
+        text-align: right;
+    }
+    h1{
+        font-size: 1.5rem;
+        max-width: fit-content;
+    }
+    h2{font-size: 1.25rem;}
+    .nav-list{
+        display: flex;
+        list-style-type: none;
+        gap: 1.5vw;
+    }
+    .abrirMenu{
+        display : none;
+    }
+     .cerrarMenu{
+    display: none;
+    }
+   
+    .abrirMenu{
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        text-align: end;
+        cursor: pointer;
+        align-items: end;
+        z-index:2;
+        margin-left:22vw;
+    }
+    .cerrarMenu{
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        text-align: end;
+        align-items: end;
+        margin-left:22vw;
+    }
 
+    .barra2{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2vw;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        padding: 2vw;
+    }
+  
+    .barra2.visible{
+        opacity: 1;
+        visibility: visible;
+        font-size: 1rem;
+    }
+    
+    .nav-list{
+        flex-direction: column;
+        align-items: end;        
+    }
+    main{
+    background-image: url(../img/BODY.png);
+    background-size:25%;
+    background-position:70vw;
+    background-repeat: no-repeat;
     }
  
     .seccionPrincipal{
@@ -159,7 +245,7 @@ display: none;
         flex-direction: column;
         gap: 5vh;
         align-items: center;
-        background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+        background-image: repeating-linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
         width: 100vw;
         justify-content: space-between;
         padding: 3vh 5vw;
@@ -193,64 +279,17 @@ display: none;
         font-size: 2.5vh;
         margin-bottom: 2.5vh;
     }
-    .nav-list{
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        gap: 1.5vw;
-    }
-    .abrirMenu{
-        display : none;
-    }
-     .cerrarMenu{
-    display: none;
-    }
-   
-    .abrirMenu{
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-        text-align: end;
-        cursor: pointer;
-        align-items: end;
-        z-index:2;
 
-    }
-    .cerrarMenu{
-        display: block;
-        border: 0;
-        font-size: 2rem;
-        background-color: transparent;
-        cursor: pointer;
-        text-align: end;
-        align-items: end;
-    }
-
-    .barra2{
-        opacity: 0;
-        visibility: hidden;
-        align-items: end;
-        gap: 2vw;
-        top: 0; 
-        right: 0;
-        bottom: 0;
-        padding: 2vw;
-    }
-  
-    .barra2.visible{
-        opacity: 1;
-        visibility: visible;
-        font-size: 1rem;
-    }
+}
+@media screen and (max-width: 633px){
     
-    .nav-list{
-        flex-direction: column;
-        align-items: end;
-        
+    main{
+    background-image: url(../img/BODY.png);
+    background-size:12%;
+    background-position: top center;
     }
- .link-menu{
-    font-size: 0.75rem;
-    text-align: right;
- }
+
+    .cuadro{
+        margin-top: 10vh;
+    }
 }
