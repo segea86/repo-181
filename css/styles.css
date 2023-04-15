@@ -212,78 +212,91 @@ display: none;
 
     }
  
-    .secciónPrincipal{
+    .seccionPrincipal{
         display: flex;
         justify-content:space-between;
         align-items: center;
         width:100vw;
         background-color:var(--color-blanco);
-        padding: 3vh 5vw;
+        gap: 6vw;
+        padding: 3vh 0vw;
     }
-    .fondoPrincipal{
-        display:flex;
-        box-shadow: -3px 3px 7px 3px rgb(40, 40, 40);
-        border-radius: 1rem;
-        animation-name:aparece;
-        animation-duration: 2s;
-        width: 25vw;
-        flex-wrap: wrap;   
-    }
-    .seccionSecundaria{
+    .container{
         display: flex;
         justify-content:space-between;
-        width:30vw;
-        align-items:center;
+        align-items:flex-end;
     }
-    #timer{
-        font-size:1.25rem;
+    .fondoPrincipal{
+        width:20vw;
         box-shadow: -3px 3px 7px 3px var(--color-sombra);
-        border-radius: 1rem;
+        border-radius: 50px;
         animation-name:aparece;
-        animation-duration: 2s;
-        min-height: 10vh;
-        max-width:35vw;
-        align-self: center;
-        justify-content:center;
-        margin-top: 5vw;
-        margin-left: 15vw;
+        animation-duration: 2s;  
     }
-    
-    #timer:hover{
-        transition: 1s ease-in-out;
-        background-color: rgb(250, 223, 238);
+    .divOferta{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin-top:10vh;
+        gap:10vh;
+        padding: 3vh 5vw;
+        text-align: center;
+        margin-right: 25vw;
     }
     .oferta{
-        color:rgba(50, 50, 50, 0.50);
-        margin-top: 15vh;
+        color:var(--color-letra);
         width: 100%;
         text-align:center;
         font-size: 0.75rem;
-        padding: 3vh 5vw;
     }
-    
     span{
         color: var(--color-rosado2) !important;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
-    
+    p#timer{
+        font-size:1.25rem;
+        box-shadow: -3px 3px 7px 3px var(--color-sombra);
+        border-radius: 50px;
+        animation-name:aparece;
+        animation-duration: 2s;
+        text-align: center;
+        align-items: center;
+        padding: 3vh 5vw;
+    }
+    #timer:hover{
+        transition: 0.75s ease-in-out;
+        background-color: var(--color-rosado3);
+    }
     .productos{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 3vh 5vw;
+        gap:2vh;
         justify-content: space-between;
-        background-image: linear-gradient(to top,var(--color-blanco),var(--color-amarillo),var(--color-blanco));
+        align-items: center;
+        background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
     }    
     .card-producto{
         width: 400px;
+        height: fit-content;
         padding: 20px;        
-        box-shadow: -3px 3px 7px 3px var(--color-sombra);
+        box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
         border-radius: 1rem;
         display: flex;
         flex-direction: column;       
-        justify-content: space-between;}
-    .card-producto img{ width: 100%;}
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .card-producto img{
+        max-height:100%;
+        max-width: 100%;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
     footer{
         display: flex;
         flex-direction: column;
@@ -355,6 +368,9 @@ display: none;
         font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
+        text-align: end;
+        align-items: end;
+        margin-left:22vw;
 
     }
 
@@ -374,13 +390,18 @@ display: none;
     .barra2.visible{
         opacity: 1;
         visibility: visible;
+        font-size: 1rem;
     }
+    
     .nav-list{
         flex-direction: column;
         align-items: end;
         
     }
-  
+ .link-menu{
+    font-size: 1rem;
+    text-align: right;
+ }
 
 }
     

@@ -5,21 +5,26 @@
     font-family: Belleza; color:rgb(9, 0, 80);
     box-sizing: border-box;
 }
-/* Dudas: ¿se puede usar la paleta? */
+
 :root {
---color-celeste:rgb(205, 240, 234);
---color-blanco:rgb(249, 249, 249);
---color-rosado:rgb(246, 198, 234);
---color-amarillo:rgb(250, 244, 183);
-}
-header{
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado));
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding:3vh 5vw;
-    width:100vw;
-}
+    --color-rosado:rgb(246, 198, 234);
+    --color-rosado2:rgb(225, 15, 204);
+    --color-rosado3:rgb(250, 223, 238);
+    --color-celeste:rgb(205, 240, 234);
+    --color-blanco:rgb(249, 249, 249);
+    --color-amarillo:rgb(250, 244, 183);
+    --color-letra: rgb(40,40,40);
+    --color-sombra:rgba(40, 40, 40, 0.25)
+    }
+    header{
+        display:flex;
+        background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vh 5vw;
+        height: 14vh;
+    }
 .bienvenida{
     display: flex;
     justify-content:space-between;
@@ -81,7 +86,7 @@ font-weight: 600;
 margin-bottom: 10px;}
 
 main form{
-    width: 50%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     gap:3vh;
@@ -90,7 +95,7 @@ main form{
    display: flex;
    flex-direction: column;
    text-align: left;
-
+   
 }
 main form .inputContainer input,select{
     border: 2px solid #f0faf1;
@@ -191,13 +196,13 @@ display: none;
         padding:10vh 3vw;
         background-color: var(--color-blanco);    
     }
-    form{
+/*     form{
         padding: 50px 55px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         text-align: center;
         width: 340px;
-    }
+    } */
     main{
         min-height:80vh;
         display: flex;
@@ -213,7 +218,7 @@ display: none;
         margin-bottom: 10px;}
         
         main form{
-            width: 50%;
+            width: 80vw;
             display: flex;
             flex-direction: column;
             gap:3vh;
@@ -261,16 +266,23 @@ display: none;
         list-style-type: none;
         gap: 1.5vw;
     }
+    .abrirMenu{
+        display : none;
+    }
+     .cerrarMenu{
+    display: none;
+    }
    
     .abrirMenu{
         display: block;
         border: 0;
-        font-size: 2vw;
+        font-size: 2rem;
         background-color: transparent;
         text-align: end;
         cursor: pointer;
         align-items: end;
         z-index:2;
+        margin-left:22vw;
         
        
 
@@ -278,9 +290,12 @@ display: none;
     .cerrarMenu{
         display: block;
         border: 0;
-        font-size: 2vw;
+        font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
+        text-align: end;
+        align-items: end;
+        margin-left:22vw;
 
     }
 
@@ -300,13 +315,17 @@ display: none;
     .barra2.visible{
         opacity: 1;
         visibility: visible;
+        font-size: 1rem;
     }
+    
     .nav-list{
         flex-direction: column;
         align-items: end;
         
     }
-  
-
+ .link-menu{
+    font-size: 0.75rem;
+    text-align: right;
+ }
 }
     
