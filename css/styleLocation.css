@@ -75,7 +75,7 @@ main{
 .cuadro{
     display:flex;
     padding: 20px;        
-    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+    box-shadow: -3px 3px 7px 3px var(--color-sombra);
     border-radius: 25px;
     width: 400px;
     height: 400px;

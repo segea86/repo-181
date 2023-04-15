@@ -50,7 +50,7 @@ header .navegación{
 header .navegación a{
     text-decoration: none;
     padding: 1vw;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 h1{ font-size: 3rem;}
 h2{font-size: 30px;}
@@ -134,7 +134,7 @@ display: none;
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 835px){
     
     header{
         background-image: repeating-linear-gradient(to top,var(--color-rosado),var(--color-rosado3));

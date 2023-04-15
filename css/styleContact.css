@@ -48,22 +48,48 @@ header .navegación{
      /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
 }
 header .navegación a{
+    display: flex;
     text-decoration: none;
     padding: 1vw;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    max-width: 200px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
 }
 h1{font-size: 3rem;}
 h2{font-size: 30px;}
 
 main{
-    min-height:90vh;
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
     gap:10vh;
-    padding:10vh 3vw;
-    background-color:var(--color-blanco);    
+    padding:3vh 5vw;
+    background-color:var(--color-blanco);
+    min-height: 100vh;  
 }
+
+.container{
+    display: flex;
+    box-shadow: -3px 3px 7px 3px var(--color-sombra);
+    border-radius: 25px;
+    width:200px;
+    height: 200px;
+    padding:20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img{
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 footer{
     background-image: linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
@@ -86,7 +112,10 @@ a{
  .cerrarMenu{
 display: none;
 }
+.link-menu{
+    max-width: fit-content;
 
+}
 
 @media screen and (max-width: 768px){
     
