@@ -6,21 +6,29 @@
     box-sizing: border-box;
 }
 :root {
---color-celeste:rgb(205, 240, 234);
---color-blanco:rgb(249, 249, 249);
 --color-rosado:rgb(246, 198, 234);
 --color-rosado2:rgb(225, 15, 204);
+--color-rosado3:rgb(250, 223, 238);
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
 --color-amarillo:rgb(250, 244, 183);
+--color-letra: rgb(40,40,40);
+--color-sombra:rgba(40, 40, 40, 0.25)
 }
 header{
     display:flex;
-    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-blanco));
+    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
     width: 100vw;
-    max-height: fit-content;
     justify-content: space-between;
     align-items: center;
     padding: 3vh 5vw;
-    height: 12vh;
+    height: 14vh;
+}
+.bienvenida{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:6vw;
 }
 section #logo{
     display:flex;
@@ -29,14 +37,15 @@ section #logo{
     max-width:auto;
     max-height: 6vw;
 }
-
+.bienvenida>h2{
+    font-size:1.75rem;
+}
 a{
     display:flex;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    color:var(--color-letra);
 }
-/* Al respecto de las barras de navegación. Se habían hecho en columna respetando el modelo para agrupar cosas que están más relacionadas:
-la marca con la registración y el login con la cotización ¿es correcto o nos convenía hacerlas en fila? */
 main{
     width:100vw;
 }
@@ -48,66 +57,67 @@ main{
         opacity:1;
     }
 }
-.secciónPrincipal{
+.seccionPrincipal{
     display: flex;
     justify-content:space-between;
     align-items: center;
     width:100vw;
     background-color:var(--color-blanco);
-    padding: 3vh 5vw;
+    gap: 6vw;
+    padding: 3vh 0vw;
 }
-.fondoPrincipal{
-    display:flex;
-    width:20vw;
-    box-shadow: -3px 3px 7px 3px rgb(40, 40, 40);
-    border-radius: 1rem;
-    animation-name:aparece;
-    animation-duration: 2s;   
-}
-.seccionSecundaria{
+.container{
     display: flex;
     justify-content:space-between;
-    width:30vw;
-    align-items:center;
+    align-items:flex-end;
 }
-#timer{
-    font-size:2rem;
-    box-shadow: -3px 3px 7px 3px rgb(40,40,40);
-    border-radius: 1rem;
+.fondoPrincipal{
+    width:20vw;
+    box-shadow: -3px 3px 7px 3px var(--color-sombra);
+    border-radius: 50px;
     animation-name:aparece;
-    animation-duration: 2s;
-    min-height: 10vh;
-    max-width:35vw;
-    align-self: center;
-    justify-content:center;
-    margin-top: 5vw;
-    margin-left: 15vw;
+    animation-duration: 2s;  
 }
-
-#timer:hover{
-    transition: 1s ease-in-out;
-    background-color: rgb(250, 223, 238);
+.divOferta{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10vh;
+    padding: 3vh 5vw;
+    text-align: center;
 }
 .oferta{
-    color:rgba(50, 50, 50, 0.50);
+    color:var(--color-letra);
     width: 100%;
     text-align:center;
     font-size: 1.25rem;
-    padding: 3vh 5vw;
 }
-
 span{
     color: var(--color-rosado2) !important;
     font-size: 2rem;
 }
-
+p#timer{
+    font-size:1.5rem;
+    box-shadow: -3px 3px 7px 3px var(--color-sombra);
+    border-radius: 50px;
+    animation-name:aparece;
+    animation-duration: 2s;
+    text-align: center;
+    align-items: center;
+    padding: 3vh 5vw;
+}
+#timer:hover{
+    transition: 0.75s ease-in-out;
+    background-color: var(--color-rosado3);
+}
 .productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 3vh 5vw;
     justify-content: space-between;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-amarillo),var(--color-blanco));
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
 }    
 .card-producto{
     width: 400px;
@@ -123,7 +133,7 @@ footer{
     flex-direction: column;
     gap: 5vh;
     align-items: center;
-    background-image: linear-gradient(to top,var(--color-rosado),var(--color-blanco));
+    background-image: linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
     width: 100vw;
     justify-content: space-between;
     padding: 3vh 5vw;
@@ -132,7 +142,7 @@ footer nav{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    color:rgb(40, 40, 40);
+    color: var(-color--letra);
     width: 100vw;
     margin-top: 2vh;
     padding: 2vh 5vw;
@@ -148,7 +158,7 @@ h1{
 #firma{
     width:100%
 }
-p{
+footer p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,6 +187,19 @@ display: none;
         align-items: flex-start;
        
     }
+    
+    .bienvenida{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:6vw;
+        max-width: 50%;
+    }
+    .bienvenida h2{
+        font-size: 1.25rem;
+
+    }
+ 
     .secciónPrincipal{
         display: flex;
         justify-content:space-between;
@@ -187,11 +210,12 @@ display: none;
     }
     .fondoPrincipal{
         display:flex;
-        width:20vw;
         box-shadow: -3px 3px 7px 3px rgb(40, 40, 40);
         border-radius: 1rem;
         animation-name:aparece;
-        animation-duration: 2s;   
+        animation-duration: 2s;
+        width: 25vw;
+        flex-wrap: wrap;   
     }
     .seccionSecundaria{
         display: flex;
@@ -200,8 +224,8 @@ display: none;
         align-items:center;
     }
     #timer{
-        font-size:1.5rem;
-        box-shadow: -3px 3px 7px 3px rgb(40,40,40);
+        font-size:1.25rem;
+        box-shadow: -3px 3px 7px 3px var(--color-sombra);
         border-radius: 1rem;
         animation-name:aparece;
         animation-duration: 2s;
@@ -228,7 +252,7 @@ display: none;
     
     span{
         color: var(--color-rosado2) !important;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
     
     .productos{
@@ -242,7 +266,7 @@ display: none;
     .card-producto{
         width: 400px;
         padding: 20px;        
-        box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+        box-shadow: -3px 3px 7px 3px var(--color-sombra);
         border-radius: 1rem;
         display: flex;
         flex-direction: column;       
@@ -262,7 +286,7 @@ display: none;
         display:flex;
         align-items:center;
         justify-content:space-between;
-        color:rgb(40, 40, 40);
+        color:var(--color-letra);
         width: 100vw;
         margin-top: 2vh;
         padding: 2vh 5vw;
@@ -308,6 +332,7 @@ display: none;
         cursor: pointer;
         align-items: end;
         z-index:2;
+        margin-left:22vw;
         
        
 
