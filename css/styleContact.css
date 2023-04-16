@@ -80,13 +80,13 @@ main{
     height: 200px;
     padding:20px;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .container img{
     align-self: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     
 }
 
@@ -104,7 +104,8 @@ footer{
 a{
     display:flex;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: 7px;
 }
 .abrirMenu{
     display : none;
@@ -308,6 +309,10 @@ display: none;
         width:100%;
         font-size: 2.5vh;
         margin-bottom: 2.5vh;
+    }
+    .container{
+        display: flex;
+        
     }
 
 }
