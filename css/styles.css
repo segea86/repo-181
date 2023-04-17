@@ -100,7 +100,7 @@ span{
 p#timer{
     font-size:1.5rem;
     box-shadow: -3px 3px 7px 3px var(--color-sombra);
-    border-radius: 50px;
+    border-radius: 25px;
     animation-name:aparece;
     animation-duration: 2s;
     text-align: center;
@@ -125,8 +125,8 @@ p#timer{
     width: 400px;
     height: 370px;
     padding: 20px;        
-    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
-    border-radius: 1rem;
+    box-shadow: -3px 3px 7px 3px var(--color-sombra);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;       
     justify-content: space-between;

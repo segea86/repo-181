@@ -1,0 +1,29 @@
+[
+    {
+    "Marca":" Colorama",
+    "Color":" Hippie chic",
+    "Precio":" $1020",
+    "url":"https://images.tcdn.com.br/img/img_prod/1017481/esmalte_verniz_cor_hippie_chic_8ml_colorama_2405_1_4923d54883f2e24d4a89b377db8dc045.jpg"
+},
+{
+    "Marca":" Idi",
+    "Color":" 78 Adventure",
+    "Precio":" $1050",
+    "url":"https://d3ugyf2ht6aenh.cloudfront.net/stores/001/462/370/products/70-781-c782f3319ddb72a0fe16167826765631-1024-1024.webp"
+
+},
+
+{
+    "Marca":" Cutex",
+    "Color":" Malbec", 
+    "Precio":" $547",
+    "url":"https://storage.googleapis.com/dev-mercadofarma/production/media/images/catalog/product/9b98c174e9cf4904bbd0a84f0093d0ef/637757101295944046_0cutex-color-esmalte-unas-malb.jpg"
+},
+
+{
+    "Marca":" Vogue",
+    "Color":" Gel Armonía",
+    "Precio":" $850",
+    "url":"https://i.linio.com/p/0036776015cd94e7fb9b4bfdfb0b2d3c-product.webp"
+}
+]

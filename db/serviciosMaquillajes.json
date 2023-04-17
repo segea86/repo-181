@@ -1,0 +1,19 @@
+[
+    {"Servicio": "Maquillaje para casamientos",
+    "Incluye":"Peinado y accesorios",
+    "Costo": "$12000",
+    "url":"../img/casamiento.png"
+    },
+
+{
+    "Servicio": "Maquillaje para cumpleaños de 15",
+    "Incluye":"Peinado y sesión de fotos",
+    "Costo":"$25000",
+    "url":"../img/quince.png"
+},
+{   "Servicio":"Maquillaje artístico",
+    "Incluye":"Disfraz, peinado y accesorios",
+    "Costo":"$60000",
+    "url":"../img/artistico.png"
+}
+]

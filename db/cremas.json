@@ -1,0 +1,29 @@
+[
+    {
+        "Marca":"La Roche-Posay",
+        "Para":" Resequedad extrema",
+        "Precio":" $6499",
+        "url":"https://www.laroche-posay.com.mx/-/media/project/loreal/brand-sites/lrp/america/latam/products/lipikar/lipikar-syndet-ap-plus/eczema-lipikar-syndet-ap/la-roche-posay-productpage-eczema-lipikar-syndet-ap-400ml-3337875537315-front.png"
+},
+    {
+        "Marca":" La Roche-Posay",
+        "Para":" Pieles muy secas y ásperas",
+        "Precio":" $12311",
+        "url":"https://www.laroche-posay.com.mx/-/media/project/loreal/brand-sites/lrp/america/latam/products/lipikar/lipikar-lait-urea-5-plus/larocheposaybodycarelipikarlaiturea5400mlsmoothingsoothinglotion0003337875685818fss.png"
+    
+    },
+    
+    {
+        "Marca":" La Roche-Posay",
+        "Para":" Piel sensible", 
+        "Precio":" $8450 ",
+        "url":"https://www.laroche-posay.com.mx/-/media/project/loreal/brand-sites/lrp/america/latam/products/effaclar/effaclar-ultra-concentrated-serum/larocheposay-product-effaclar-serum-fss-30ml-1200x1200px.png"
+    },
+    
+    {
+        "Marca":" La Roche-Posay",
+        "Para":" Piel irritada",
+        "Precio":"$5263",
+        "url":"https://www.laroche-posay.com.mx/-/media/project/loreal/brand-sites/lrp/america/latam/products/cicaplast/levres-barrier-repairing/damaged/la-roche-posay-productpage-damaged-cicaplast-levres-barrier-repairing-30106659-front.png"
+    }
+    ]
