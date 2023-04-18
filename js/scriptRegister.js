@@ -10,12 +10,13 @@ formularioUsuarios.addEventListener("submit", (event) => {
       contrasena: formularioUsuarios.contrasena.value,
       provincia: formularioUsuarios.provincia.value,
     });
-    alert("Bienvenido a la experiencia Cosme Fulanito");
+    alert("Bienvenido a la experiencia Cosme Fulanito"),
+    console.log(usuarios);
   }else {
     alert("Complete todos los campos por favor. Recuerde usar una cuenta de gmail o hotmail");
   }
 });
-function camposCompletos() {
+let camposCompletos = () => {
   nombre = formularioUsuarios.nombre.value;
   email = formularioUsuarios.email.value;
   contrasena = formularioUsuarios.contrasena.value;
@@ -25,7 +26,7 @@ function camposCompletos() {
     return true;
   }
 }
-function esEmail(){
+let esEmail = () => {
   if (((email.includes("@gmail"))||(email.includes("@hotmail")))&&(email)){
     return true;}
     else{
