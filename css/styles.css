@@ -283,7 +283,7 @@ display: none;
         height: fit-content;
         padding: 20px;        
         box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
-        border-radius: 1rem;
+        border-radius: 50px;
         display: flex;
         flex-direction: column;       
         justify-content: space-between;

@@ -15,14 +15,14 @@
     --color-letra: rgb(40,40,40);
     --color-sombra:rgba(40, 40, 40, 0.25)
     }
-    header{
-        display:flex;
-        background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
-        width: 100vw;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3vh 5vw;
-        height: 14vh;
+header{
+    display:flex;
+    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    height: 14vh;
     }
 .bienvenida{
     display: flex;
@@ -79,16 +79,16 @@ main{
     height: 370px;
     padding: 20px;        
     box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
-    border-radius: 25px;
+    border-radius: 50px;
     font-family: sans-serif;
     margin-top: 20vh;
     gap: 5px;
+    margin-bottom: 5vh;
 }
 
 .card-producto img{
     max-height:70%;
     max-width: 70%;
-    border-radius: 5px;
     align-self: center;
 }
 

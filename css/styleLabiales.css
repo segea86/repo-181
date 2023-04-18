@@ -79,16 +79,16 @@ main{
     height: 370px;
     padding: 20px;        
     box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
-    border-radius: 25px;
+    border-radius: 50px;
     font-family: sans-serif;
     margin-top: 20vh;
     gap: 5px;
+    margin-bottom: 5vh;
 }
 
 .card-producto img{
     max-height:70%;
     max-width: 70%;
-    border-radius: 5px;
     align-self: center;
 }
 

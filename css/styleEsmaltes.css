@@ -83,6 +83,7 @@ main{
     font-family: sans-serif;
     margin-top: 20vh;
     gap: 5px;
+    margin-bottom: 5vh;
 }
 
 .card-producto img{

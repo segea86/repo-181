@@ -6,9 +6,9 @@ fetch("../db/serviciosMaquillajes.json")
             contenedorHTML.innerHTML += `
             <div class="card-producto">
                 <img src=${servicio.url}>
-                <h2>${servicio.Servicio}</h2>
-                <h3>${servicio.Costo}</h3>
-                <p>Incluye:${servicio.Incluye}</p>
+                <h2> ${servicio.Servicio}</h2>
+                <h3> ${servicio.Costo}</h3>
+                <p>Incluye: ${servicio.Incluye}</p>
             </div>           `
       }
     })

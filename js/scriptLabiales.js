@@ -6,9 +6,9 @@ fetch("../db/labiales.json")
             contenedorHTML.innerHTML += `
             <div class="card-producto">
                 <img src=${labial.url}>
-                <h2>Marca:${labial.Marca}</h2>
-                <p>Color:${labial.Color}</p>
-                <h3>Precio:${labial.Precio}</h3>
+                <h2>Marca: ${labial.Marca}</h2>
+                <h3>Precio: ${labial.Precio}</h3>
+                <p>Color: ${labial.Color}</p>
             </div>           `
       }
     })

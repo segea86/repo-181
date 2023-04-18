@@ -16,49 +16,50 @@
     --color-letra: rgb(40,40,40);
     --color-sombra:rgba(40, 40, 40, 0.25)
     }
-header{
-    display:flex;
-    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
-    width: 100vw;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3vh 5vw;
-    height: 14vh;
+    header{
+        display:flex;
+        background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vh 5vw;
+        height: 14vh;
+        }
+    .bienvenida{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:6vw;
+        max-width: 50%;
     }
-.bienvenida{
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:6vw;
-    max-width: 50%;
-}
-section #logo{
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
-    max-width:auto;
-    max-height: 6vw;
-}
-header .navegación{
-    display: flex;
-    height: 40px;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 50%;
-     /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
-}
-header .navegación a{
-    display: flex;
-    text-decoration: none;
-    padding: 1vw;
-    font-size: 1.25rem;
-    max-width: 200px;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-}
-h1{font-size: 3rem;}
-h2{font-size: 30px;}
+    section #logo{
+        display:flex;
+        align-items: center;
+        justify-content:space-between;
+        max-width:auto;
+        max-height: 6vw;
+    }
+    section #logo img{
+        align-self: center;}
+
+    header .navegación{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 50%;
+         /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
+    }
+    header .navegación a{
+        text-decoration: none;
+        padding: 1vw;
+        font-size: 1.25rem;
+    }
+    header>h2{
+        text-align: center;
+        font-size: 1.75rem;
+        max-height: 100%;
+    }
 
 main{
     width: 100vw;
@@ -72,7 +73,7 @@ main{
     min-height: 100vh;  
 }
 
-.container{
+/* .container{
     display: flex;
     box-shadow: -3px 3px 7px 3px var(--color-sombra);
     border-radius: 25px;
@@ -88,6 +89,28 @@ main{
     width: 90%;
     height: 90%;
     
+} */
+
+.container{
+    width: 250px;
+    height: 250px;
+    padding: 30px;        
+    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;       
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5vh;
+}
+.container img{
+    max-height:100%;
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border-radius: 50px;
 }
 
 
@@ -217,7 +240,8 @@ display: none;
     
     .nav-list{
         flex-direction: column;
-        align-items: end;        
+        align-items: end;
+        z-index: 2;        
     }
     main{
         min-height:90vh;
