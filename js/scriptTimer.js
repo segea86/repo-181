@@ -1,4 +1,4 @@
-var fechaLimite = new Date("April 20, 2023 00:00:00").getTime();
+var fechaLimite = new Date("April 30, 2023 00:00:00").getTime();
 var x = setInterval(function() {
     var ahora = new Date().getTime();
     var tiempoRestante = fechaLimite - ahora;

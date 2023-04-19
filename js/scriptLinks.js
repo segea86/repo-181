@@ -1,16 +1,16 @@
 const enlaceServicios = document.getElementById("link1")
 enlaceServicios.addEventListener("click",() => {
-    window.location.href="./pages/serviciosMaquillajes.html"
+    window.open("./pages/serviciosMaquillajes.html", "_blank")
 })
 const enlaceEsmaltes = document.getElementById("link2")
 enlaceEsmaltes.addEventListener("click",() => {
-    window.location.href="./pages/esmaltes.html"
+    window.open("./pages/esmaltes.html", "_blank")
 })
 const enlaceLabiales = document.getElementById("link3")
 enlaceLabiales.addEventListener("click",() => {
-    window.location.href="./pages/labiales.html"
+    window.open("./pages/labiales.html", "_blank")
 })
 const enlaceCremas = document.getElementById("link4")
 enlaceCremas.addEventListener("click",() => {
-    window.location.href="./pages/cremas.html"
+    window.open("./pages/cremas.html", "_blank")
 })

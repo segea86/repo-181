@@ -251,7 +251,8 @@ display: none;
         font-size: 0.75rem;
     }
     span{
-        color: var(--color-rosado2) !important;
+        color: var(--color-rosado2);
+        font-weight: bold;
         font-size: 1rem;
     }
     p#timer{
@@ -289,6 +290,7 @@ display: none;
         justify-content: space-between;
         align-items: center;
         align-content: center;
+        cursor: pointer;
     }
     .card-producto img{
         max-height:100%;
@@ -296,6 +298,7 @@ display: none;
         align-items: center;
         align-content: center;
         align-self: center;
+        cursor: pointer;
     }
     footer{
         display: flex;
