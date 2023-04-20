@@ -36,6 +36,8 @@ section #logo{
     justify-content:space-between;
     max-width:auto;
     max-height: 6vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }
 .bienvenida>h2{
     font-size:1.75rem;
@@ -119,6 +121,7 @@ p#timer{
     gap:2vw;
     align-items: center;
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
+    
 }    
 .card-producto{
     width: 400px;
@@ -131,6 +134,7 @@ p#timer{
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    cursor:pointer;
 }
 .card-producto img{
     max-height:100%;
@@ -289,6 +293,7 @@ display: none;
         justify-content: space-between;
         align-items: center;
         align-content: center;
+        cursor: pointer;
     }
     .card-producto img{
         max-height:100%;
