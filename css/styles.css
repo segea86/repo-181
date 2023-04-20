@@ -196,6 +196,10 @@ display: none;
         justify-content:center;
 
 }
+    section #logo{
+        padding-bottom: 0;
+        padding-top: 0;
+}
 }
 
 @media screen and (max-width: 768px){
