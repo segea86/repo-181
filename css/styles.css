@@ -63,8 +63,7 @@ main{
     align-items: center;
     width:100vw;
     background-color:var(--color-blanco);
-    gap: 6vw;
-    padding: 3vh 0vw;
+    padding: 3vh 5vw;
 }
 .container{
     display: flex;
@@ -94,8 +93,9 @@ main{
     font-size: 1.25rem;
 }
 span{
-    color: var(--color-rosado2) !important;
+    color: var(--color-rosado2);
     font-size: 2rem;
+    font-weight: bold;
 }
 p#timer{
     font-size:1.5rem;
@@ -114,10 +114,9 @@ p#timer{
 .productos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 3vh 5vw;
     gap:2vw;
-    justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
 }    
@@ -156,8 +155,7 @@ footer nav{
     justify-content:space-between;
     color: var(-color--letra);
     width: 100vw;
-    margin-top: 2vh;
-    padding: 2vh 5vw;
+    padding: 3vh 5vw;
 }
 footer nav a{
     text-decoration: none;
@@ -176,8 +174,7 @@ footer p{
     justify-content: center;
     text-align: center;
     width:100%;
-    font-size: 2.5vh;
-    margin-bottom: 2.5vh;
+    font-size: 0.75rem;
 }
 .nav-list{
     display: flex;
@@ -190,36 +187,38 @@ footer p{
  .cerrarMenu{
 display: none;
 }
+@media screen and (max-width: 910px){
+    .productos{
+        display: flex;
+        justify-content:center;
+
+}
+}
+
 @media screen and (max-width: 768px){
     
     header{
         display:flex;
         width: 100vw;
         gap:5vw;
-        align-items: flex-start;
-       
+        align-items: flex-start;    
     }
-    
     .bienvenida{
         display: flex;
         justify-content:space-between;
         align-items:center;
-        gap:6vw;
         max-width: 50%;
     }
     .bienvenida h2{
         font-size: 1.25rem;
-
     }
- 
     .seccionPrincipal{
         display: flex;
         justify-content:space-between;
         align-items: center;
         width:100vw;
         background-color:var(--color-blanco);
-        gap: 6vw;
-        padding: 3vh 0vw;
+        padding: 3vh 5vw;
     }
     .container{
         display: flex;
@@ -242,7 +241,7 @@ display: none;
         gap:10vh;
         padding: 3vh 5vw;
         text-align: center;
-        margin-right: 25vw;
+        margin-right: 15vw;
     }
     .oferta{
         color:var(--color-letra);
@@ -252,8 +251,8 @@ display: none;
     }
     span{
         color: var(--color-rosado2);
-        font-weight: bold;
         font-size: 1rem;
+        font-weight: bold;
     }
     p#timer{
         font-size:1.25rem;
@@ -275,9 +274,9 @@ display: none;
         justify-content: center;
         padding: 3vh 5vw;
         gap:2vh;
-        justify-content: space-between;
         align-items: center;
         background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
+        padding: 3vh 5vw;
     }    
     .card-producto{
         width: 400px;
@@ -290,7 +289,6 @@ display: none;
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        cursor: pointer;
     }
     .card-producto img{
         max-height:100%;
@@ -298,7 +296,6 @@ display: none;
         align-items: center;
         align-content: center;
         align-self: center;
-        cursor: pointer;
     }
     footer{
         display: flex;
@@ -316,8 +313,7 @@ display: none;
         justify-content:space-between;
         color:var(--color-letra);
         width: 100vw;
-        margin-top: 2vh;
-        padding: 2vh 5vw;
+        padding: 3vh 5vw;
     }
     footer nav a{
         text-decoration: none;
@@ -336,8 +332,7 @@ display: none;
         justify-content: center;
         text-align: center;
         width:100%;
-        font-size: 2.5vh;
-        margin-bottom: 2.5vh;
+        font-size: 0.75rem;
     }
     .nav-list{
         display: flex;
@@ -348,7 +343,7 @@ display: none;
         display : none;
     }
      .cerrarMenu{
-    display: none;
+        display: none;
     }
    
     .abrirMenu{
@@ -401,15 +396,8 @@ display: none;
         align-items: end;
         
     }
- .link-menu{
-    font-size: 1rem;
-    text-align: right;
- }
-
+    .link-menu{
+        font-size: 1rem;
+        text-align: right;
+    }
 }
-    
-
-/* ¿Cómo poner imágenes de forma tal que no se rompan? Recuerdo que debían ser png, creo, pero preguntar bien cómo convertirlas si las tenemos en jpeg */
-/* Mayores problemas: alinear; que queden los marcos justo con el tamaño del visor, ni más ni menos, poner tamaños de fuente que se adapten siempre a la caja que los contiene */
-/* Faltan los mediaQuery y los íconos */
-/* Falta ver el tema de agregar el agente */
