@@ -31,13 +31,12 @@ header{
     gap:6vw;
 }
 section #logo{
-    display:flex;
-    align-items: center;
-    justify-content:space-between;
     max-width:auto;
     max-height: 6vw;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
+    padding-bottom: 4px;
+}
+.bienvenida>h2{
+    font-size:1.75rem;
 }
 header .navegación{
     display: flex;
@@ -52,11 +51,6 @@ header .navegación a{
     font-size: 1.25rem;
     display:flex;
     text-decoration: none;
-}
-header>h2{
-    text-align: center;
-    font-size: 1.75rem;
-    max-height: 100%;
 }
 .nav-list{
     display: flex;
@@ -73,16 +67,16 @@ header>h2{
 main{
     background-color: var(--color-blanco);
     width: 100vw;
-    padding: 3vh 5vw;
-    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
+    min-height:100vh; 
 }
 #productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap:3vw;
+    padding: 3vh 5vw;
+    gap:2vw;
     align-items: center;
-    margin:5vh;
+    background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
 }
 .card-producto{
     display:flex;
@@ -90,9 +84,10 @@ main{
     width: 400px;
     height: 370px;
     padding: 20px;        
-    box-shadow: -3px 3px 7px 3px var(--color-sombra);
+    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
     border-radius: 50px;
     font-family: sans-serif;
+    margin-top: 20vh;
     gap: 5px;
     transition: background-color 0.75s ease-in-out;
 }
@@ -131,6 +126,17 @@ footer>p{
     text-align: center;
     width:100%;
     font-size: 1rem;
+}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5vw;
+}
+.abrirMenu{
+    display : none;
+}
+ .cerrarMenu{
+    display: none;
 }
 @media screen and (max-width: 916px){
     
@@ -231,6 +237,12 @@ footer>p{
         flex-direction: column;
         align-items: end;        
     }
+    main{
+        background-image: url(../img/BODY.png);
+        background-size:25%;
+        background-position:70vw;
+        background-repeat: no-repeat;
+    }
     #productos{
         justify-content: center;
         padding: 6vh;
@@ -251,7 +263,12 @@ footer>p{
         justify-content:space-between;
         color:var(--color-letra);
         width: 100vw;
-        padding: 3vh 5vw;
+        margin-top: 2vh;
+        padding: 2vh 5vw;
+    }
+    footer nav a{
+        text-decoration: none;
+        font-size: 1.5vw;
     }
     h1{
         width:100%;
@@ -266,7 +283,8 @@ footer>p{
         justify-content: center;
         text-align: center;
         width:100%;
-        font-size: 0.75rem;
+        font-size: 2.5vh;
+        margin-bottom: 2.5vh;
     }
 }
 @media screen and (max-width: 633px){
@@ -276,5 +294,14 @@ footer>p{
         padding: 1vh;
         font-size: 0.75rem;
         text-align: right;
+    }
+    main{
+        background-image: url(../img/BODY.png);
+        background-size:12%;
+        background-position: top center;
+    }
+
+    .cuadro{
+        margin-top: 10vh;
     }
 }

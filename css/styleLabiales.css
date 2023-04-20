@@ -153,13 +153,12 @@ footer>p{
         display:flex;
         align-items: center;
         justify-content:space-between;
-        max-width:auto;
-        max-height: 6vw;
+        padding-bottom: 0;
+        padding-top: 0;
     }
     header .navegación{
         display: flex;
         flex-direction: column;
-        height: 40px;
         align-items: center;
         justify-content: space-between;
         max-width: 50%;
@@ -181,7 +180,7 @@ footer>p{
     .nav-list{
         display: flex;
         list-style-type: none;
-        gap: 1.5vw;
+        gap:2px;
     }
     .abrirMenu{
         display : none;
@@ -217,16 +216,16 @@ footer>p{
         display: flex;
         flex-direction: column;
         align-items: end;
-        gap: 2vw;
-        top: 0; 
+        gap: 2px;
+        /* top: 0; 
         right: 0;
-        bottom: 0;
+        bottom: 0; */
         padding: 2vw;
     }
     .barra2.visible{
         opacity: 1;
         visibility: visible;
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
     .nav-list{
         flex-direction: column;
@@ -289,8 +288,15 @@ footer>p{
         background-size:12%;
         background-position: top center;
     }
+    header .navegación a{
+        text-decoration: none;
+        padding: 1vh;
+        font-size: 0.75rem;
+        text-align: right;
+    }
 
     .cuadro{
         margin-top: 10vh;
     }
+    
 }
