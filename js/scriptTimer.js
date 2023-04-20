@@ -12,3 +12,6 @@ if (tiempoRestante<0){
     document.getElementById("timer").innerHTML = "La oferta expiró"
 }
 }, 1000);
+
+const ahora = new Date().getTime();
+console.log(ahora);

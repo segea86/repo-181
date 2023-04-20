@@ -2,7 +2,7 @@
 *{
     margin:0;
     padding:0;
-    font-family: Belleza; color:rgb(9, 0, 80);
+    font-family: Belleza; color:var(--color-letra);
     box-sizing: border-box;
 }
 :root {
@@ -105,7 +105,7 @@ footer>p{
     justify-content: center;
     text-align: center;
     width:100%;
-    font-size: 2.5vh;
+    font-size: 1rem;
     margin-bottom: 2.5vh;
 }
 

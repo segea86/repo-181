@@ -1,9 +1,9 @@
-const contenedorHTML = document.getElementById("productos")
+const cartaHTML = document.getElementById("productos")
 fetch("../db/serviciosMaquillajes.json")
     .then(response => response.json())
     .then(data => {
         for(const servicio of data){
-            contenedorHTML.innerHTML += `
+            cartaHTML.innerHTML += `
             <div class="card-producto">
                 <img src=${servicio.url}>
                 <h2> ${servicio.Servicio}</h2>
