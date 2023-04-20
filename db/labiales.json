@@ -2,25 +2,25 @@
     {
     "Marca":" Mac",
     "Color":" Light Pinky Nude",
-    "Precio":" £28.00",
+    "Precio":" $ 2800",
     "url":"https://sdcdn.io/mac/gb/mac_sku_SRH902_1x1_0.png?width=1080&height=1080"
 },
     {
     "Marca":" Mac",
     "Color":" Deep Blue",
-    "Precio":" £20.00",
+    "Precio":" $ 2000",
     "url":"https://sdcdn.io/mac/gb/mac_sku_M2LP3J_1x1_0.png?width=1080&height=1080"
 },
     {
     "Marca":" Mac",
     "Color":" St. Marks Yellow",
-    "Precio":" £20.00",
+    "Precio":" $ 2500",
     "url":"https://sdcdn.io/mac/gb/mac_sku_SRL1KH_1x1_0.png?width=1080&height=1080"
 },
     {
     "Marca":"Mac",
     "Color":"La femme",
-    "Precio":" £13.20",
+    "Precio":" $ 1320",
     "url":"https://sdcdn.io/mac/mx/mac_sku_SG7329_1x1_0.png?width=1080&height=1080"
     }
 ]
