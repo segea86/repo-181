@@ -2,34 +2,33 @@
 *{
     margin:0;
     padding:0;
-    font-family: Belleza; color:var(--color-letra);
+    font-family: Belleza; color:rgb(40, 40, 40);
     box-sizing: border-box;
 }
 :root {
-    --color-rosado:rgb(246, 198, 234);
-    --color-rosado2:rgb(225, 15, 204);
-    --color-rosado3:rgb(250, 223, 238);
-    --color-celeste:rgb(205, 240, 234);
-    --color-blanco:rgb(249, 249, 249);
-    --color-amarillo:rgb(250, 244, 183);
-    --color-letra: rgb(40,40,40);
-    --color-sombra:rgba(40, 40, 40, 0.25)
-    }
-    header{
-        display:flex;
-        background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
-        width: 100vw;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3vh 5vw;
-        height: 14vh;
-    }
+--color-rosado:rgb(246, 198, 234);
+--color-rosado2:rgb(225, 15, 204);
+--color-rosado3:rgb(250, 223, 238);
+--color-celeste:rgb(205, 240, 234);
+--color-blanco:rgb(249, 249, 249);
+--color-amarillo:rgb(250, 244, 183);
+--color-letra: rgb(40,40,40);
+--color-sombra:rgba(40, 40, 40, 0.25)
+}
+header{
+    display:flex;
+    background-image: repeating-linear-gradient(to bottom,var(--color-rosado),var(--color-rosado3));
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    height: 14vh;
+}
 .bienvenida{
     display: flex;
     justify-content:space-between;
     align-items:center;
     gap:6vw;
-    max-width: 50%;
 }
 section #logo{
     display:flex;
@@ -37,6 +36,8 @@ section #logo{
     justify-content:space-between;
     max-width:auto;
     max-height: 6vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }
 header .navegación{
     display: flex;
@@ -47,9 +48,10 @@ header .navegación{
      /* este puede ir o no porque en este caso, esta propiedad ya la heredó del padre. Ver bien en el video de la clase. */
 }
 header .navegación a{
-    text-decoration: none;
     padding: 1vw;
     font-size: 1.25rem;
+    display:flex;
+    text-decoration: none;
 }
 header>h2{
     text-align: center;
@@ -61,7 +63,6 @@ main{
     width: 100vw;
     min-height:100vh; 
 }
-
 #productos{
     display: flex;
     flex-wrap: wrap;
@@ -71,43 +72,41 @@ main{
     align-items: center;
     background-image: linear-gradient(to top,var(--color-blanco),var(--color-rosado3),var(--color-blanco));
 }
-
 .card-producto{
     display:flex;
     flex-direction: column;
     width: 400px;
     height: 370px;
     padding: 20px;        
-    box-shadow: -3px 3px 7px 3px var(--color-sombra);
-    border-radius: 25px;
+    box-shadow: -3px 3px 7px 3px rgba(40, 40, 40, 0.25);
+    border-radius: 50px;
     font-family: sans-serif;
     margin-top: 20vh;
     gap: 5px;
-    margin-bottom: 5vh;
+    transition: background-color 0.75s ease-in-out;
 }
-
 .card-producto img{
     max-height:70%;
     max-width: 70%;
-    border-radius: 5px;
     align-self: center;
+    border-radius: 50px;
 }
-
+.card-producto:hover{
+    background-color: var(--color-rosado3);
+    backdrop-filter: blur(3px);
+}
 .card-producto h2{
     text-align: center;
     margin-bottom: 10px;
 }
-
 .card-producto h3{
     text-align: center;
     margin-bottom: 10px;
 }
-
 .card-producto p{
     text-align: center;
     margin-bottom: 10px;
 }
-
 footer{
     align-items: center;
     background-image: linear-gradient(to top,var(--color-rosado),var(--color-rosado3));
@@ -115,16 +114,13 @@ footer{
     justify-content: space-between;
     padding: 3vh 5vw;
 }
-
 footer>p{
     align-items: center;
     justify-content: center;
     text-align: center;
     width:100%;
-    font-size: 2.5vh;
-    margin-bottom: 2.5vh;
+    font-size: 1rem;
 }
-
 .nav-list{
     display: flex;
     list-style-type: none;
@@ -134,7 +130,7 @@ footer>p{
     display : none;
 }
  .cerrarMenu{
-display: none;
+    display: none;
 }
 @media screen and (max-width: 916px){
     
@@ -171,7 +167,7 @@ display: none;
     }
     header .navegación a{
         text-decoration: none;
-        padding: 1vw;
+        padding: 1vh;
         font-size: 1rem;
         text-align: right;
     }
@@ -179,7 +175,9 @@ display: none;
         font-size: 1.5rem;
         max-width: fit-content;
     }
-    h2{font-size: 1.25rem;}
+    h2{
+        font-size: 1.25rem;
+    }
     .nav-list{
         display: flex;
         list-style-type: none;
@@ -189,9 +187,8 @@ display: none;
         display : none;
     }
      .cerrarMenu{
-    display: none;
+        display: none;
     }
-   
     .abrirMenu{
         display: block;
         border: 0;
@@ -226,37 +223,24 @@ display: none;
         bottom: 0;
         padding: 2vw;
     }
-  
     .barra2.visible{
         opacity: 1;
         visibility: visible;
         font-size: 1rem;
     }
-    
     .nav-list{
         flex-direction: column;
         align-items: end;        
     }
     main{
-    background-image: url(../img/BODY.png);
-    background-size:25%;
-    background-position:70vw;
-    background-repeat: no-repeat;
+        background-image: url(../img/BODY.png);
+        background-size:25%;
+        background-position:70vw;
+        background-repeat: no-repeat;
     }
- 
-    .seccionPrincipal{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        width:100vw;
-        background-color:var(--color-blanco);
-        gap: 6vw;
-        padding: 3vh 0vw;
-    }
-    .container{
-        display: flex;
-        justify-content:space-between;
-        align-items:flex-end;
+    #productos{
+        justify-content: center;
+        padding: 6vh;
     }
     footer{
         display: flex;
@@ -297,14 +281,13 @@ display: none;
         font-size: 2.5vh;
         margin-bottom: 2.5vh;
     }
-
 }
 @media screen and (max-width: 633px){
     
     main{
-    background-image: url(../img/BODY.png);
-    background-size:12%;
-    background-position: top center;
+        background-image: url(../img/BODY.png);
+        background-size:12%;
+        background-position: top center;
     }
 
     .cuadro{

@@ -77,7 +77,8 @@ main{
     box-shadow: -3px 3px 7px 3px var(--color-sombra);
     border-radius: 50px;
     animation-name:aparece;
-    animation-duration: 2s;  
+    animation-duration: 5s;
+    transition-timing-function: ease-in-out;  
 }
 .divOferta{
     display:flex;
@@ -103,8 +104,6 @@ p#timer{
     font-size:1.5rem;
     box-shadow: -3px 3px 7px 3px var(--color-sombra);
     border-radius: 25px;
-    animation-name:aparece;
-    animation-duration: 2s;
     text-align: center;
     align-items: center;
     padding: 3vh 5vw;
