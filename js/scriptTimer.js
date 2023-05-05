@@ -1,4 +1,4 @@
-const fechaLimite = new Date("May 1, 2023 00:00:00").getTime();
+const fechaLimite = new Date("Jul 8, 2023 00:00:00").getTime();
 const x = setInterval(()=> {
     const ahora = new Date().getTime();
     const tiempoRestante = fechaLimite - ahora;
